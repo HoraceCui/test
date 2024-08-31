@@ -34,3 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Don't kill instace        
+        run:  |
+          echo "sleep start"
+          sleep 0.08h # Prevent to killing instance after failure
+          echo "sleep end"
