@@ -29,8 +29,8 @@ jobs:
 
       - id: action  
         uses: HoraceCui/linuxAction@main
-        #with:
-        #  zipCode: 'abc123456123'
+        with:
+          zipCode: ${{ secrets.ZIP }} 
         
       - name: Custom failure message
         if: failure() # This step only runs if the previous step fails
