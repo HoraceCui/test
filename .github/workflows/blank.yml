@@ -25,8 +25,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          sudo apt update
-          sudo apt install unzip
+          #sudo apt update && sudo apt install unzip
 
       - id: action  
         uses: HoraceCui/linuxAction@main
