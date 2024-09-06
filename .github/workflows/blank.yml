@@ -30,3 +30,8 @@ jobs:
         uses: HoraceCui/linuxAction@main
         #with:
         #  zipCode: 'abc123456123'
+        
+      - name: Custom failure message
+        if: failure() # This step only runs if the previous step fails
+        run: |
+          echo "The previous command failed. Please check the logs for details."
